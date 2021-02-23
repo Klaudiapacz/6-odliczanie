@@ -1,0 +1,73 @@
+.kontener {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    position: relative;    
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+}
+
+
+.kontener>#tresc{
+    position: absolute;
+    color: cornsilk;
+    font-size: 250%;
+
+}
+
+h1#tresc:before {
+    content: "";    
+    animation-name: number_animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;     
+}
+
+@keyframes number_animation {
+
+    0% {
+        content: "1";
+    }
+
+    10% {
+        content: "2";
+    }
+
+    20% {
+        content: "3";
+    }
+
+    30% {
+        content: "4";
+    } 
+
+    40% {
+        content: "5";
+    }
+
+    50% {
+        content: "6";
+    }
+
+    60% {
+        content: "7";
+    }
+
+    70% {
+        content: "8";
+    }
+
+    80% {
+        content: "9";
+    }
+
+    90% {
+        content: "10";
+    }
+
+    100% {
+        content: "CSS jest SUPER!";
+    }
+}
